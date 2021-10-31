@@ -1,0 +1,602 @@
+@import "partials/variables";
+@import "partials/mixins";
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    color: $body-color;
+    overflow-x: hidden;
+    
+}
+#container{
+    margin: 0;
+    padding: 0;
+
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 40px 45px;
+        @include small-screen(){
+            padding: 35px 10px;
+        }
+    }
+
+        .logo{
+            max-width: 210px;
+            @include small-screen(){
+                text-align: center;
+                max-width: 150px;
+            }
+            @include medium-screen(){
+                max-width: 180px;
+            }
+        }
+    
+
+    .line{
+        @include line;
+    }
+    .mainImage{
+        padding: 50px 30px;
+        background-color: #312d82;
+        @include medium-screen(){
+            padding: 40px 0px;
+        }
+        .main-img{
+            box-sizing: border-box;
+        }
+    }
+    
+
+    .btn{
+        @include button;
+    }
+
+    .paragraphs{
+        text-align: right;
+        padding: $sect-padding;
+        line-height: 0.6;
+        font-size: $text-size;
+        color: $head4-color;
+        font-weight: 600;
+       
+        p{
+            a{
+                @include link;
+            }
+        }
+        @include large-screen(){
+            line-height: 1.5;
+            text-align: right;
+            padding: $responsive-padd;
+        }
+        @include medium-screen(){
+            text-align: left;
+        }
+    }
+    .para{
+        font-size: 20px;
+        color: $head4-color;
+        font-weight: bolder;
+        padding: 0 45px;
+        a{
+            @include link;
+        }
+        @include medium-screen(){
+            padding: $responsive-padd;
+        }
+        
+    }
+
+    //===== INTRODUCTIION SECTION =====
+    #introduction{
+        padding: $sect-padding;
+        @include medium-screen(){
+            padding: $responsive-padd;
+        }
+        h2{
+            font-weight: bolder;
+            color: $body-color;
+            padding-bottom: 8px;
+        }
+        p{
+            font-size: $text-size;
+            color: $body-color;
+            padding-bottom: 20px;
+        }
+        .line2{
+            @include line;
+            height: 5px;
+        }
+        h5{
+            font-weight: bold;
+            padding-top: 20px;
+            color: $body-color;
+        }
+        ol{
+            padding-left: 25px;
+            li{
+                font-size: 15px;
+                color: black;
+            }
+        }
+    }
+
+    //===== MODULE SECTION ======
+    #module{
+        background-color: $head4-color;
+        padding-bottom: 60px;
+        .row{
+            padding: $sect-padding;
+            @include medium-screen(){
+                padding: $responsive-padd;
+            }
+            .content{
+                .objective{
+                    background-color: white;
+                    padding: 20px 30px;
+                    border: 3px solid $border-color;
+                    border-radius: 15px;
+                    padding-bottom: 0;
+                    h3{
+                        color: rgb(70, 71, 73);;
+                        font-weight: bold;
+                    }
+                    .line2{
+                        @include line2;
+                        margin: 15px 0;
+                    }
+                    h5{
+                        font-weight: bold;
+                        font-size: 20px;
+                        color: $body-color;
+                    }
+                    ul{
+                        padding-left: 22px;
+                        list-style: none;
+                        li{
+                            @include list-item;
+                        }
+                        li::before{
+                            @include li-before;
+                        }
+                    }
+                }
+                #module-right{
+                    background-color: $head4-color;
+                    border: none;
+                    border-radius: 0;
+                    padding-left: 60px;
+                    h3{
+                        padding-bottom: 10px;
+                    }
+                    li{
+                        line-height: 1.8;
+                    }
+                    h3,h5,li{
+                        color: white;
+                    }
+                    li::before{
+                        color: $border-color;
+                    }
+                   
+                }
+            }
+            
+        }
+
+        #sec-row{
+            div{
+                p{
+                    font-size: $text-size;
+                }
+                .line2{
+                    @include line2;
+                    width: 5px;
+                    height: 150px;
+                    margin-top: 10px;
+                    //margin-left: -30px;
+                    @include medium-screen(){
+                        display: none;
+                    }
+                }
+                #module-paragrapgh{
+                    @include large-screen(){
+                        padding-left: 30px; 
+                        padding: 20px;
+                    }
+                    a{
+                        @include link;
+                        color: white;
+                    }
+                }
+            } 
+           #module-img{
+               margin-left : 25px;
+               @include medium-screen(){
+                width: 20%; 
+            }
+                img{
+                    width: 90px;
+                    border: 3px solid $border-color;
+                    padding: 17px 12px;
+                    background-color: white;
+                    border-radius: 50%;
+                }
+            }
+        }
+        .reportPara{
+            padding-right: 50px;
+            margin-top: -40px;
+        
+            p{
+                text-align: center;
+                padding: 10px 25px;
+                border:  3px solid $border-color;
+                font-size: 20px;
+                color: $body-color;
+                background-color: white;
+                font-weight: bold;
+                line-height: 1.4;
+                
+            }
+        }
+    }
+
+    //====== TABS ======
+    .tabs{
+        .tabs-button{
+            padding: $sect-padding;
+            padding: 30px 0;
+            text-align: center;
+            @include medium-screen(){
+                padding: $responsive-padd;
+            }
+            button{
+                @include button;
+                padding: 4px 38px;
+                margin: 0;
+                margin-right: 5px;
+                font-weight: normal;
+                border: 3px solid $head4-color;
+                @include large-screen(){
+                    padding: 7px 0;
+                    width: 230px;
+                    font-size: 14px;
+                    font-weight: bold;
+                }
+                @include medium-screen(){
+                    margin-bottom: 5px;
+                }
+                i{
+                    font-size: 36px;
+                    color: $head4-color;
+                    background-color: $border-color;
+                    border-radius: 50%;
+                    border: 1.5px solid $border-color;
+                    position: absolute;
+                    margin-top: -45px;
+                    margin-left: 7px;
+                    display: none;
+                    @include small-medium-screen(){
+                        font-size: 28px;
+                    }
+                }
+                &:hover{
+                    color: white;
+                    background-color: $head4-color;
+                }
+                
+            }
+            button:active {
+                background-color: $head4-color;
+                color: white;
+                border: none;
+            } 
+            #tabBtn-1{
+                @include large-screen(){
+                    width: 135px;
+                }
+            }
+            #tabBtn-3, #tabBtn-4, #tabBtn-5{
+                @include large-screen(){
+                    width: 180px;
+                }
+            }
+        }
+        #tab-content{
+            #tab1-content, #tab2-content, #tab3-content, #tab4-content, #tab5-content{
+                padding: $sect-padding;
+                @include medium-screen(){
+                    padding: $responsive-padd;
+                }
+                h3{
+                    color: $head3-color;
+                    font-weight: bold;
+                }
+                .line2{
+                    @include line2;
+                    margin: 15px 0;
+                }
+                p{
+                    font-size: $text-size;
+                    color: $body-color;
+                }
+                #head5{
+                    color: $head3-color;
+                }
+                ul{
+                    padding-left: 22px;
+                    list-style: none;
+                    margin: 0;
+                    padding-bottom: 20px;
+
+                    li{
+                        @include list-item;
+                        padding: 3px 0;
+                        
+                    }
+                    li::before{
+                        @include li-before;
+                        margin-left: 1em;
+                        color: $head4-color;
+                        @include large-screen(){
+                            padding: 0;
+                            margin: 0;
+                        }
+                    }
+                    .nested-list::before{
+                        color: $border-color;
+                    }
+                }
+                h6{
+                    padding: 10px 0
+                }
+                #line3{
+                    @include line;
+                    height: 5px;
+                    margin: 25px 0;
+                }
+                h5{
+                    font-weight: bold;
+                    color: $reference-color;
+                }
+                ol{
+                    padding-left: 30px;
+
+                    li{
+                        color: $reference-color;
+                        padding: 0;
+                        margin: 0;
+                        font-size: 15px;
+                        padding: 2px 0;
+                    }
+                }
+                button{
+                    @include button;
+                    margin-top: 0;
+                    margin-left: 0;
+                    margin: 20px 0
+                }
+                span{
+                    font-size: 15px;
+                    color: $reference-color;
+                }
+            }
+            #tab5-content{
+                padding: 0;
+                h3, .line2, p{
+                    margin: 10px 40px;
+                    @include medium-screen(){
+                        margin: $responsive-padd;
+                    }
+                }
+                .elderly-frail{
+                    padding: 40px 0;
+                    margin-top: 25px;
+                    margin-bottom: 50px;
+                    background-color: $head4-color;
+                    @include medium-screen(){
+                        padding: 40px;
+                    }
+                    @include small-screen(){
+                        padding: 20px;
+                    }
+                    img{
+                        padding: 0;
+                        border: $primary-border;
+                        border-radius: 10px;
+                    }
+                    p{
+                        color: white;
+                        text-align: left;
+                        font-size: 16px;
+                    }
+                }
+                #elderly-frail-last{
+                    margin-bottom: 0;
+                }
+                .elderly-content{
+                    padding: $sect-padding;
+                    @include medium-screen(){
+                        padding: $responsive-padd;
+                    }
+                    p{
+                        margin: 0;
+                        padding-bottom: 20px;
+                        
+                    }
+                }
+            }
+        }
+    }
+    .takeQuiz{
+        @include button;
+        background-color: $border-color;
+        border: 3px solid $head4-color;
+        color: $head4-color;
+        padding: 15px 50px;
+        text-decoration: none;
+        position: fixed;
+        bottom: 3%;
+        right: 1%;
+        &:hover{
+            border: 3px solid $border-color;
+        }
+    }
+}
+
+//==== QUIZ PAGE STYLING ======
+.quiz{
+    .question1, .question2, .question3, .question4, .question5{
+        .question1Content{
+            padding: $sect-padding;
+            padding-top: 0;
+            padding-bottom: 90px;
+            @include medium-screen(){
+                padding: $responsive-padd;
+            }
+            h3{
+                font-weight: bolder;
+                color: $head3-color;
+            }
+            p{
+                font-size: $text-size;
+                padding: 10px 0;
+                @include small-medium-screen(){
+                    font-size: 17px;
+                }
+            }
+            .options{
+                font-size: $text-size;
+                @include small-medium-screen(){
+                    font-size: 17px;
+                }
+                .option{
+                    .twoOption{
+                        padding: 20px 30px;
+                        @include medium-screen(){
+                            padding: 0 20px;
+                          
+                        }
+                        @include large-screen(){
+                            padding: 0 50px;
+                        }
+                        label{
+                            padding: 6px 0;
+                            display: flex;
+                            align-items: center;
+                            @include medium-screen(){
+                                padding: 10px 0;
+                                line-height: 1;
+                            }
+                            .radio{
+                                width: 30px;
+                                height: 30px;
+                                color: orange;
+                                @include small-screen(){
+                                    width: 15px;
+                                    height: 15px;
+                                }
+                                @include medium-screen(){
+                                    width: 20px;
+                                    height: 20px;
+                                }
+                               
+                            }
+                            span{
+                                font-weight: bold;
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .next{
+            position: absolute;
+            right: 3%;
+            margin-top: -35px;
+            @include medium-screen(){
+                margin-top: -20px;
+            }
+            button{
+                @include button;
+                padding: 20px 80px;
+                margin-top: 0px;
+                
+            }
+        }
+        
+        .Remarks{
+            background-color: $head4-color;
+            padding: 0;
+            .correctRemarksContent, .incorrectRemarksContent{
+                padding: 60px 45px;
+                padding-bottom: 100px;
+                display: none;
+                @include medium-screen(){
+                    padding: $responsive-padd;
+                }
+                h3{
+                    font-weight: bold;
+                    color: white
+                }
+                .line2{
+                    @include line2;
+                    margin: 15px 0;
+                }
+                p{
+                    color: white;
+                    font-size: $text-size;
+                }
+            }
+        }
+        .quiz-line{
+            @include line;
+            height: 5px;
+        }
+    }
+    .question2, .question3, .question4, .question5{
+        display: none;
+    }
+}
+
+#quizPageContent{
+    padding: $sect-padding;
+    @include medium-screen(){
+        padding: $responsive-padd;
+    }
+    h5{
+        font-weight: bold;
+        color: $head3-color;
+    }
+    ol{
+        padding-left: 15px;
+
+        li{
+            color: rgb(0, 0, 0);
+            padding: 0;
+            margin: 0;
+            font-size: 15px;
+            padding: 2px 0;
+        }
+    }
+    button{
+        @include button;
+        margin: 25px 0;
+        margin-bottom: 40px;
+        padding: 20px 90px;
+    }
+    span{
+        font-size: 15px;
+        color: $reference-color;
+    }
+}
+.footerhr{
+    @include line;
+}

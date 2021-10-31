@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZ PAGE</title>
+
+    <!-- fav icon -->
+    <link rel="icon" href="/images/favicon.ico">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
+    <!----font awesome------>
+    <script src="https://kit.fontawesome.com/8441000675.js" crossorigin="anonymous"></script>
+
+    <!-- Open Sans font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/scss/style.css">
+</head>
+
+<body>
+    <div id="container">
+        <!-- header -->
+        <div class="row">
+            <div class="logo col-sm-6">
+                <img src="/images/left-logo.png" alt="Logo-1" class="img-fluid">
+            </div>
+            <div class="logo col-sm-6">
+                <img src="/images/right-logo.png" alt="Logo-1" class="img-fluid pt-2">
+            </div>
+        </div>
+        <hr class="line">
+        <div class="mainImage">
+            <img src="/images/main-image.png" alt="targets for glycaemic" class="main-img img-fluid">
+        </div>
+        
+        <button class="btn">start assessment</button>
+
+        <div class="paragraphs">
+            <p>Click for Trajenta® (linagliptin) Prescribing information for <a href="/">Great Britain</a> and <a
+            href="/"> Northern Ireland</a></p>
+            <p>Click for Jardiance® (empagliflozin) Prescribing information for <a href="/">Great Britain</a> and <a
+            href="/"> Northern Ireland</a></p>
+        </div>
+
+        <!-- QUIZ SECTION -->
+        <div class="quiz">
+
+            <!-- QUESTION - 1 -->
+            <div class="question1" id="ques1">
+                <div class="question1Content">
+                    <h3>Question 1</h3>
+                    <p>James, aged 39, has recently been diagnosed with type 2 diabetes. He is overweight, with a BMI of 29kg/m2. James works full time as a
+                    university librarian and travels by train and bus to work. What would be the first steps you should take to support James to reach his
+                    agreed target?</p>
+                    <div class="options">
+                        <div class="option d-flex flex-row flex-wrap justify-content-between align-items-center">
+                            <div class="twoOption">
+                                <label for="option1">
+                                    <input type="radio" name="radio" class="radio" onclick="displayIncorrect(this)"> &nbsp;<span> a.</span> &nbsp;	&nbsp;Refer him to a structured diabetes education programme
+                                </label><br>
+                                <label for="option2">
+                                    <input type="radio" name="radio" class="radio" onclick="displayIncorrect(this)" > &nbsp;<span> b.</span> &nbsp;	&nbsp;Advise him to try to lose weight
+                                </label><br> 
+                            </div>
+                            
+                            <div class="twoOption">
+                                <label for="option3">
+                                    <input type="radio" name="radio" class="radio" onclick="displayIncorrect(this)"> &nbsp;<span>c.</span> &nbsp;	&nbsp;Advise him to walk from the train station to work
+                                </label><br>
+                                <label for="option4">
+                                    <input type="radio" name="radio" class="radio" onclick="displayCorrect(this)"> &nbsp;<span>d.</span> &nbsp;	&nbsp;All of the above
+                                </label><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="next">
+                    <button class="" id="nextbtn1">next</button>
+                </div>
+                
+                <div class="Remarks">
+                    <div class="correctRemarksContent" id="correct">
+                        <h3>Correct</h3>
+                        <hr class="line2">
+                        <p>Lifestyle changes can have a significant effect on metabolic health with changes being seen in glycaemic control, blood pressure and lipid profiles.1 These changes may include improvements in dietary intake weight and activity levels. Referral to structured education
+                        programmes such as DESMOND or XPERT can support people to make these changes.2,3</p>
+                    </div>
+                    <div class="incorrectRemarksContent" id="incorrect">
+                        <h3>Incorrect</h3>
+                        <hr class="line2">
+                        <p>Please select another option</p>
+                    </div>
+                </div>
+                <hr class="quiz-line">     
+            </div>
+
+            <!-- QUESTION - 2 -->
+            <div class="question2" id="ques2">
+                <div class="question1Content">
+                    <h3>Question 2</h3>
+                    <p>At diagnosis James had an HbA1c of 67mmol/mol. After 3 months of making changes to his diet and activity levels his HbA1c is now 52mmol/mol. At what stage does NICE recommend that medication should be started?</p>
+                    <div class="options">
+                        <div class="option d-flex flex-row flex-wrap justify-content-md-between justify-content-xl-around align-items-center">
+                            <div class="twoOption">
+                                <label for="option1">
+                                    <input type="radio" name="radio" class="radio" onclick="Q2displayIncorrect(this)"> &nbsp;<span>a.</span> &nbsp;	&nbsp;53 mmol/mol (>7.0%)
+                                </label><br>
+                                <label for="option2">
+                                    <input type="radio" name="radio" class="radio" onclick="Q2displayCorrect(this)"> &nbsp;<span>b.</span> &nbsp;	&nbsp;48 mmol/mol (>6.5%)
+                                </label><br> 
+                            </div>
+                            
+                            <div class="twoOption">
+                                <label for="option3">
+                                    <input type="radio" name="radio" class="radio" onclick="Q2displayIncorrect(this)"> &nbsp;<span>c.</span> &nbsp;	&nbsp;58 mmol/mol (>7.2%)
+                                </label><br>
+                                <label for="option4">
+                                    <input type="radio" name="radio" class="radio" onclick="Q2displayIncorrect(this)"> &nbsp;<span>d.</span> &nbsp;	&nbsp;Above 58mmol/mol (>7.5%)
+                                </label><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="next">
+                    <button class="" id="nextbtn2">next</button>
+                </div>
+                
+                <div class="Remarks">
+                    <div class="incorrectRemarksContent" id="Q2incorrect">
+                        <h3>Incorrect</h3>
+                        <hr class="line2">
+                        <p>Please select another option</p>
+                    </div>
+                    <div class="correctRemarksContent" id="Q2correct">
+                        <h3>Correct</h3>
+                        <hr class="line2">
+                        <p>NICE guidelines state that medication will be needed to treat an HbA1c of over 48mmol/mol (6.5%) if lifestyle interventions alone are inadequate.1 <br> <br> The figure of 53mmol/mol (7.0%) is the target recommended for people being treated with a single drug with an associated isk of hypoglycaemia. The figure of 58mmol/mol (>7.5%) is the level at which an intensification of therapy should be considered – i.e. reinforce lifestyle advice and consider an additional drug to improve blood glucose control. Guidelines suggest            treatment goals that consider patients’ specific circumstances.1-3</p>
+                    </div>
+                </div>
+                <hr class="quiz-line">     
+            </div>
+
+            <!-- QUESTION - 3 -->
+            <div class="question3" id="ques3">
+                <div class="question1Content">
+                    <h3>Question 3</h3>
+                    <p>Hannah is 73 years old, and has had type 2 diabetes for a number of years, during which her blood glucose has been well controlled. She is being treated with metformin 1g bd but over the past 6 months her HbA1c has crept up, and is currently 59mmol/mol. <br>Hannah manages well in general although she lives alone and her only daughter lives 80 miles away. Which of the following would <strong>NOT</strong> be appropriate?</p>
+                    <div class="options">
+                        <div class="option d-flex flex-row flex-wrap justify-content-between align-items-center">
+                            <div class="twoOption">
+                                <label for="option1">
+                                    <input type="radio" name="radio" class="radio" onclick="Q3displayIncorrect(this)"> &nbsp;<span>a.</span> &nbsp;	&nbsp; Consider adding another drug to achieve
+                                </label><br>
+                                <label for="option2">
+                                    <input type="radio" name="radio" class="radio" onclick="Q3displayIncorrect(this)"> &nbsp;<span>b.</span> &nbsp;	&nbsp;Consider relaxing her HbA1c target
+                                </label><br> 
+                            </div>
+                            
+                            <div class="twoOption ">
+                                <label for="option3" class="">
+                                    <input type="radio" name="radio" class="radio" onclick="Q3displayCorrect(this)"> &nbsp;<span>c.</span> &nbsp;	&nbsp;Advise her that she must try harder to keep to her target
+                                </label><br>
+                                <label for="option4" class="">
+                                    <input type="radio" name="radio" class="radio" onclick="Q3displayIncorrect(this)"> &nbsp;<span>d.</span> &nbsp;	&nbsp;Above 58mmol/mol (>7.5%)
+                                </label><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="next">
+                    <button class="" id="nextbtn3">next</button>
+                </div>
+                
+                <div class="Remarks">
+                    <div class="incorrectRemarksContent" id="Q3incorrect">
+                        <h3>Incorrect</h3>
+                        <hr class="line2">
+                        <p>Please select another option</p>
+                    </div>
+                    <div class="correctRemarksContent" id="Q3correct">
+                        <h3>Correct</h3>
+                        <hr class="line2">
+                        <p>It would be entirely appropriate to ask Hannah about how and when she takes her medication in order to assess her adherence. It would also be right to ask her about how she feels about adding in more medication to reach a lower target or whether she is happier with a slightly higher target than might be recommended in someone younger, in order to avoid any possible side effects. It would not be appropriate to lecture Hannah or suggest that the rise in her HbA1c levels is her ‘fault’ as this could lead to a breakdown in the therapeutic relationship.1 A glycaemic target of 59mmol/mol is appropriate for ‘biologically young’ older adults.2 Very few people with diabetes, aged 70 years or older, would be anticipated to benefit from intensive intervention to targets below 53mmol/mol (7.0%).2 Care must be taken when adding in therapies, as the consequences of hypoglycaemia may be just as severe in
+                        the fit as the frail older adult.2</p>
+                    </div>
+                </div>
+                <hr class="quiz-line">     
+            </div>
+
+            <!-- QUESTION - 4 -->
+            <div class="question4" id="ques4">
+                <div class="question1Content">
+                    <h3>Question 4</h3>
+                    <p>Hannah is taking her metformin as prescribed and has not noticed any changes in her diet or activity levels that might explain the rise in her HbA1c over the past 6 months. Her current BMI is 26.8kg/m2 and this has been stable for the past few years, although it has been higher in the past. Hannah tries to keep her weight down as much as she can. Her HbA1c is 59mmol/mol, just above the threshold NICE recommends for intensification of therapy. Her most recent eGFR is 54ml/min/1.73m2, indicating mild renal impairment. Hannah is keen to aim for a tighter target for her HbA1c and is happy to take another oral hypoglycaemic agent in order to achieve this. Which of these options is LESS appropriate for Hannah?</p>
+                    <div class="options">
+                        <div class="option d-flex flex-row flex-wrap justify-content-md-between justify-content-xl-around align-items-center">
+                            <div class="twoOption">
+                                <label for="option1">
+                                    <input type="radio" name="radio" class="radio" onclick="Q4displayIncorrect(this)"> &nbsp;<span>a.</span> &nbsp;	&nbsp;Pioglitazone
+                                </label><br>
+                                <label for="option2">
+                                    <input type="radio" name="radio" class="radio" onclick="Q4displayCorrect(this)"> &nbsp;<span>b.</span> &nbsp;	&nbsp;A sulfonylurea
+                                </label><br> 
+                            </div>
+                            
+                            <div class="twoOption">
+                                <label for="option3" class="">
+                                    <input type="radio" name="radio" class="radio" onclick="Q4displayIncorrect(this)"> &nbsp;<span>c.</span> &nbsp;	&nbsp;A DPP-4 inhibitor
+                                </label><br>
+                                <label for="option4" class="">
+                                    <input type="radio" name="radio" class="radio" onclick="Q4displayIncorrect(this)"> &nbsp;<span>d.</span> &nbsp;	&nbsp;Above 58mmol/mol (>7.5%)
+                                </label><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="next">
+                    <button class="" id="nextbtn4">next</button>
+                </div>
+                
+                <div class="Remarks">
+                    <div class="incorrectRemarksContent" id="Q4incorrect">
+                        <h3>Incorrect</h3>
+                        <hr class="line2">
+                        <p>Please select another option</p>
+                    </div>
+                    <div class="correctRemarksContent" id="Q4correct">
+                        <h3>Correct</h3>
+                        <hr class="line2">
+                        <p>Sulfonylureas can cause weight gain and hypoglycaemia,1 and as Hannah works hard at keeping her weight under control they would not be an ideal choice for this patient. Furthermore, because she lives alone it would be preferable to avoid any drug that might
+                        increase the risk of hypoglycaemia. Pioglitazone has a low risk of hypoglycaemia but is associated with weight gain.1 Pioglitazone is also associated with an increased risk of heart failure, bladder cancer and bone fracture, and risk factors for these
+                        conditions – including increased age – should be carefully evaluated before treatment.2 DPP-4 inhibitors have been used in frail and elderly patients, and have similar efficacy in older patients to that in younger populations.3 In patients with renal impairment, a DPP-4
+                        inhibitor that doesn’t require dose adjustment, (for example, linagliptin [Trajenta®]) might be a suitable option.4 If Hannah’s kidney function was not reduced, an alternative would be an SGLT2 inhibitor, which works by preventing reabsorption of glucose in the kidneys.
+                        This leads to increased excretion of glucose in the urine, (averaging approximately 78 g/day) resulting in an immediate reduction in blood glucose levels. However, the majority of SGLT2 inhibitors are not indicated in patients with an eGFR 60ml /min/1.73m2.5 </p>
+                    </div>
+                </div>
+                <hr class="quiz-line">     
+            </div>
+
+            <!-- QUESTION - 5 -->
+            <div class="question5" id="ques5">
+                <div class="question1Content">
+                    <h3>Question 5</h3>
+                    <p>Hannah is now taking metformin with a DPP-4 inhibitor. Her general practice nurse has recommended that she should have another HbA1c test in 3 months’ time to assess her response to this first intensification of therapy. What target should Hannah be aiming for                 on this new regimen?</p>
+                    <div class="options">
+                        <div class="option d-flex flex-row flex-wrap justify-content-md-between justify-content-xl-around align-items-center">
+                            <div class="twoOption">
+                                <label for="option1">
+                                    <input type="radio" name="radio" class="radio" id="optionbtn" onclick="Q5displayIncorrect(this)"> &nbsp;<span>a.</span> &nbsp;	&nbsp;A drop of at least 10mmol/mol
+                                </label><br>
+                                <label for="option2">
+                                    <input type="radio" name="radio" class="radio" onclick="Q5displayIncorrect(this)"> &nbsp;<span>b.</span> &nbsp;	&nbsp;HbA1c of 48mmol/mol
+                                </label><br> 
+                            </div>
+                            
+                            <div class="twoOption">
+                                <label for="option3" class="">
+                                    <input type="radio" name="radio" class="radio" onclick="Q5displayCorrect(this)"> &nbsp;<span>c.</span> &nbsp;	&nbsp;HbA1c of 53mmol/mol
+                                </label><br>
+                                <label for="option4" class="">
+                                    <input type="radio" name="radio" class="radio" onclick="Q5displayIncorrect(this)"> &nbsp;<span>d.</span> &nbsp;	&nbsp;HbA1c of 58mmol/mol
+                                </label><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="next">
+                    <button class="" id="exitbtn">exit</button>
+                </div>
+                
+                <div class="Remarks">
+                    <div class="incorrectRemarksContent" id="Q5incorrect">
+                        <h3>Incorrect</h3>
+                        <hr class="line2">
+                        <p>Please select another option</p>
+                    </div>
+                    <div class="correctRemarksContent" id="Q5correct">
+                        <h3>Correct</h3>
+                        <hr class="line2">
+                        <p>NICE recommends that after first intensification of medication (i.e. when the patient is taking two different therapies for blood glucose control), the recommended target should be 53mmol/mol.1</p>
+                    </div>
+                </div>
+                <hr class="quiz-line">     
+            </div>
+    
+        </div>
+        <div id="quizPageContent">
+            <h5>References</h5>
+            <ol>
+                <li>Scottish Intercollegiate Guidelines Network. [SIGN 154] Pharmacological management of type 2 diabetes; November 2017. https://www.sign.ac.uk/media/1090/sign154.pdf
+                [Accessed May 2021]</li>
+                <li>NICE [NG 28] Type 2 diabetes in adults: management, December 2015 (Updated 2019). https://www.nice.org.uk/guidance/ng28 2. [Accessed May 2021]</li>
+                <li>Davies MJ, D’Alessio DA, Fradkin F, et al. Management of hyperglycemia in type 2 diabetes, 2018. A consensus report by the American Diabetes Association (ADA) and the
+                European Association for the Study of Diabetes (EASD). Diabetes Care 2018;41:2669-2701</li>
+            </ol>
+            <button class="">home</button> <br>
+            <span>Job Code: PC-GB-104631 <br>Date of preparation: July 2021</span>
+        </div>
+        <hr class="footerhr">
+
+        <!-- FOOTER -->
+        <div class="row">
+            <div class="logo col-sm-6">
+                <img src="/images/left-logo.png" alt="Logo-1" class="img-fluid">
+            </div>
+            <div class="logo col-sm-6">
+                <img src="/images/right-logo.png" alt="Logo-1" class="img-fluid pt-2">
+            </div>
+        </div>
+    </div>
+
+    <!-- javascript -->
+    <script src="/script/quiz.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT DESIGN</title>
+
+    <!-- fav icon -->
+    <link rel="icon" href="/images/favicon.ico">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
+    <!----font awesome------>
+    <script src="https://kit.fontawesome.com/8441000675.js" crossorigin="anonymous"></script>
+
+    <!-- Open Sans font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/scss/style.css">
+    <style>
+        .tablink:visited{
+            background-color: darkblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <!-- header -->
+        <div class="row">
+            <div class="logo col-sm-6 col-6">
+                <img src="/images/left-logo.png" alt="Logo-1" class="img-fluid">
+            </div>
+            <div class="logo col-sm-6 col-6">
+                <img src="/images/right-logo.png" alt="Logo-1" class="img-fluid pt-2">
+            </div>
+        </div>
+        <hr class="line">
+        <div class="mainImage">
+            <img src="/images/main-image.png" alt="targets for glycaemic" class="main-img img-fluid">
+        </div>
+        
+        <button class="btn">start assessment</button>
+
+        <div class="paragraphs">
+            <p>Click for Trajenta® (linagliptin) Prescribing information for <a href="/">Great Britain</a> and <a
+                    href="/"> Northern Ireland</a></p>
+            <p>Click for Jardiance® (empagliflozin) Prescribing information for <a href="/">Great Britain</a> and <a
+                    href="/"> Northern Ireland</a></p>
+        </div>
+
+        <p class="para">You can sign up <a href="/">here</a> if you would like to receive and manage your electronic
+            communications from Boehringer Ingelheim and its agents acting on its behalf, about BI’s products, services
+            and events.</p>
+
+        <!-- Introduction section -->
+        <div id="introduction">
+            <h2>Introduction</h2>
+            <p>Increasingly, day-to-day management of people with type 2 diabetes falls to general practice nurses
+                (GPNs).1 It is therefore important that they are familiar with the latest guidelines, and understand how
+                to apply the recommendations to their individual patients. This includes recognising how to determine
+                appropriate targets (for example, for blood glucose control) in each individual case. <br> <br> This
+                module will help improve awareness of the role of adequate blood glucose control in the prevention of
+                the complications of diabetes.</p>
+            <hr class="line2">
+            <h5>Reference</h5>
+            <ol>
+                <li> Royal College of Nursing. Education, prevention and the role of the nurse. (Updated November 2020).
+                    https://www.rcn.org.uk/clinical-topics/diabetes/education-prevention-andthe- role-of-the-nurse.
+                    [Accessed May 2021]</li>
+            </ol>
+        </div>
+
+        <!-- Module section -->
+        <div id="module">
+            <div class="row d-flex flex-row flex-wrap justify-content-center">
+                <div class="content col-md-6">
+                    <div class="objective">
+                        <h3>Learning Objectives</h3>
+                        <hr class="line2">
+                        <h5>On completion of this module the GPN will be aware of:</h5>
+                        <ul>
+                            <li>Current targets as recommended in the recent national and
+                                international guidelines</li>
+                            <li>The importance of agreeing targets with individual patients</li>
+                            <li>When to intensify drug treatment to achieve targets</li>
+                            <li>When to consider relaxing the target (on a case-by-case basis)</li>
+                            <li>The importance of good blood glucose control for the
+                                prevention of complications</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="content col-md-6">
+                    <div class="objective " id="module-right">
+                        <h3>This module is one of a series of five</h3>
+                        <hr class="line2">
+                        <h5>Others in the series are:</h5>
+                        <ul>
+                            <li>Tailoring therapy to the individual patient</li>
+                            <li>Short-term complications of diabetes</li>
+                            <li>Renal considerations in patients with type 2 diabetes</li>
+                            <li>Cardiovascular considerations in patients with type 2
+                                diabetes</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" id="sec-row">
+                <div class="col-lg-6 d-flex flex-row">
+                    <div class="">
+                        <p class="text-white pr-lg-5 mr-lg-3">This resource is provided at an intermediate level. Read the article and answer the self-assessment questions, and reflect on what you have learned. <br> <br> Complete the resource to obtain a certificate to include in your revalidation portfolio. You should record the time spent on this resource in your CPD log.
+                        </p>
+                    </div>
+                    <div class="">
+                        <hr class="line2">
+                    </div>
+                </div>
+
+                <div class="col-lg-6 d-flex flex-wrap flex-row pl-lg-5">
+                    <div class="pr-lg-5" id="module-img">
+                        <img src="/images/module.png" alt="module" class="img-fluid">
+                    </div>
+                    <div class="">
+                        <p class="text-white pt-lg-2" id="module-paragrapgh"><a href="/">Click here</a> to add this
+                            module
+                            <br> to your dashboard.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="reportPara d-flex justify-content-end justify-content-md-center">
+                <p>Adverse events should be reported. Reporting forms and information can be <br>
+                    found at https://yellowcard.mhra.gov.uk. Adverse events should also be reported <br>
+                    to Boehringer Ingelheim Drug Safety on 0800 328 1627 (freephone)
+                </p>
+            </div>
+        </div>
+        <button class="btn">start assessment</button>
+
+        <div class="tabs">
+            <div class="tabs-button">
+                <button class="tablink" id="tabBtn-1">setting <br> targets <i class="fas fa-check-circle" id="icon1"></i></button>
+                <button id="tabBtn-2" class="tablink">acheiving and <br> maintaining control <i class="fas fa-check-circle" id="icon2"></i></button>
+                <button id="tabBtn-3" class="tablink">initial <br> drug therapy <i class="fas fa-check-circle" id="icon3"></i></button>
+                <button id="tabBtn-4" class="tablink">first and second <br> intensification <i class="fas fa-check-circle" id="icon4"></i></button>
+                <button class="tablink" id="tabBtn-5">frail and/or <br> elderly patient <i class="fas fa-check-circle" id="icon5"></i></button>
+            </div>
+
+            <div id="tab-content" class="tab-content">
+                <!-- Tab-1 content -->
+                <div id="tab1-content">
+                    <h3>Setting targets</h3>
+                    <hr class="line2">
+                    <p>The focus on strict numerical targets for hypoglycaemic control has changed in recent years,
+                        allowing greater flexibility in recognition of
+                        the needs of individuals. <br> <br>
+                        Reducing HbA1c levels is associated with a reduction in microvascular and macrovascular
+                        complications in patients with type 2
+                        diabetes.1 Although several studies have demonstrated benefits of intensive glycaemic control in
+                        terms of cardiovascular risk and other
+                        outcomes, there is also some evidence that very low targets (46mmol/mol, 6.4%) may be associated
+                        with increased mortality.1 <br> <br>
+                        There is consensus between national (National Institute for Health and Care Excellence [NICE]
+                        and the Scottish Intercollegiate
+                        Guidelines Network [SIGN]) and international guidelines (American Diabetes Association/European
+                        Association for the Study of
+                        Diabetes [ADA/EASD]) that a ‘reasonable’ HbA1c target for most adult patients with type 2
+                        diabetes would be 53mmol/mol (7.0%).1-3 <br> <br>
+                        NICE defines good glycaemic control as an HbA1c of 53mmol/mol (7.0%), but stresses the
+                        importance of tailoring targets to the
+                        individual, to somewhere between 48mmol/mol (6.5%) and 53mmol/mol (7.0%).2
+                        SIGN also recommends a target of 53mmol/mol as reasonable to reduce the risk of complications,
+                        but suggests that a more stringent
+                        target (48mmol/mol [6.5%]) may be appropriate at diagnosis.1 <br> <br>
+                        It is important to balance benefits with potential harms, including the risk of hypoglycaemia
+                        and weight gain,2 and to involve patients in
+                        decisions about targets.2 <br> <br>
+                        The more recent ADA/EASD consensus statement also recommends setting individualised glycaemic
+                        targets based on patient
+                        preferences and goals, the risk of adverse events (hypoglycaemia and weight gain), and patient
+                        characteristics, including frailty and
+                        comorbid conditions.3 <br><br>
+                        <h5 id="head5">NICE2 recommends that clinicians should consider relaxing the target HbA1c level, on a
+                            case-by-case basis for people with type 2 diabetes who are:</h5> <br><br>
+                    </p>
+                    <ul>
+                        <li>Older</li>
+                        <li>Frail</li>
+                        <li>Unlikely to achieve longer-term risk-reduction benefits, for example people with a reduced life expectancy</li>
+                        <li>
+                            At increased risk of the consequences of hypoglycaemia as a result of tight blood glucose
+                            control, e.g.
+                            <ul>
+                                <li class="nested-list">People who are at risk of falling</li>
+                                <li class="nested-list">People who have impaired awareness of hypoglycaemia, and</li>
+                                <li class="nested-list">People who drive or operate machinery as part of their job</li>
+                            </ul>
+                        </li>
+                        <li>Suffering from significant comorbidities, for example, for whom intensive management would
+                            be inappropriate.</li>
+                    </ul>
+                    <p><strong>In the self-assessment that follows, hypothetical case scenarios based on fictitious
+                        patients are presented. Please refer to the relevant Summary of Product Characteristics
+                        before prescribing any of the medications mentioned.</strong></p>
+                    <h6><strong>Boehringer Ingelheim has no control of the content of the external websites listed in References below.</strong></h6>
+                    <hr class="line" id="line3">
+                    <h5>References</h5>
+                    <ol>
+                        <li>Scottish Intercollegiate Guidelines Network. [SIGN 154] Pharmacological management of type 2 diabetes; November 2017. https://www.sign.ac.uk/media/1090/sign154.pdf
+                        [Accessed May 2021]</li>
+                        <li>NICE [NG 28] Type 2 diabetes in adults: management, December 2015 (Updated 2019). https://www.nice.org.uk/guidance/ng28 2. [Accessed May 2021]</li>
+                        <li>Davies MJ, D’Alessio DA, Fradkin F, et al. Management of hyperglycemia in type 2 diabetes, 2018. A consensus report by the American Diabetes Association (ADA) and the
+                        European Association for the Study of Diabetes (EASD). Diabetes Care 2018;41:2669-2701</li>
+                    </ol>
+                    <button class="btn">start assessment</button> <br>
+                    <span>Job Code: PC-GB-104631 <br>Date of preparation: July 2021</span>
+                </div>
+
+                <!-- Tab-2 content -->
+                <div id="tab2-content">
+                    <h3>Achieving and maintaining control</h3>
+                    <hr class="line2">
+                    <p>Patients should be encouraged to achieve and maintain agreed targets unless any adverse effects, including hypoglycaemia, or their efforts to achieve their target, impair their quality of life.<br><br>1 NICE suggests that the target for HbA1c for individuals whose type 2 diabetes is managed by lifestyle and diet, or by lifestyle and diet combined with one drug that does not have an as sociated risk of hypoglycaemia is 48mmol/mol. For those who are treated with a drug
+                    associated with hypoglycaemia, the higher target (53mmol/mol [7.0%]) is recommended.1 If HbA1c levels are not adequately controlle by a single drug, and rise to 58mmol/mol (7.5%) or higher, the addition of a second glucose lowering drug is recommended, alongside reinforcing advice on diet, lifestyle and adherence to drug treatment. These patients should be supported to aim for an HbA1c level of 53mmol/mol (7.0%).1 <br>
+                    <h5 id="head5">In the self-assessment that follows, hypothetical case scenarios based on fictitious patients are presented. Please refer to the relevant Summary of Product Characteristics before prescribing any of the medications mentioned.</h5>
+                    </p>
+                    <h6><strong>Boehringer Ingelheim has no control of the content of the external websites listed in References below.</strong></h6>
+                    <hr class="line" id="line3">
+                    <h5>References</h5>
+                    <ol>
+                        <li>NICE [NG 28] Type 2 diabetes in adults: management, December 2015 (Updated 2019). https://www.nice.org.uk/guidance/ng28 1. [Accessed May 2021]</li>
+                    </ol>
+                    <button class="btn">start assessment</button> <br>
+                    <span>Job Code: PC-GB-104631 <br>Date of preparation: July 2021</span>
+                </div>
+            
+
+                <!-- Tab-3 content -->
+                <div id="tab3-content">
+                    <h3>Setting targetsInitial drug therapy</h3>
+                    <hr class="line2">
+                    <p>Metformin remains the first line oral treatment choice in all three major guidelines, together with comprehensive lifestyle measures
+                        including weight management and physical activity. <br> <br> 1-3
+                        NICE recommends that metformin should be the first line oral hypoglycaemic agent unless contraindicated or not tolerated. The
+                        current guideline reminds clinicians that gradual titration of metformin is likely to improve tolerability, and that if standard release
+                        metformin is not tolerated, even when introduced at a low dose, modified release metformin may be more readily tolerated.2 <br> <br>
+                        Alternatives to metformin (if metformin is contraindicated or not tolerated) would include a dipeptidyl-peptidase-4 (DPP-4) inhibitor,
+                        pioglitazone* or a sodium-glucose co-transporter-2 (SGLT2) inhibitor.2 <br> <br>
+                        * &nbsp; <i> Pioglitazone is also associated with an increased risk of heart failure, bladder cancer and bone fracture, and risk factors for these conditions –
+                        including increased age – should be carefully evaluated before treatment.2 </i>
+                    </p>
+                    <p><strong>In the self-assessment that follows, hypothetical case scenarios based on fictitious
+                        patients are presented. Please refer to the relevant Summary of Product Characteristics
+                        before prescribing any of the medications mentioned.</strong></p>
+                    <h6><strong>Boehringer Ingelheim has no control of the content of the external websites listed in References below.</strong></h6>
+                    <hr class="line" id="line3">
+                    <h5>References</h5>
+                    <ol>
+                        <li>Scottish Intercollegiate Guidelines Network. [SIGN 154] Pharmacological management of type 2 diabetes; November 2017. https://www.sign.ac.uk/media/1090/sign154.pdf
+                        [Accessed May 2021]</li>
+                        <li>NICE [NG 28] Type 2 diabetes in adults: management, December 2015 (Updated 2019). https://www.nice.org.uk/guidance/ng28 2. [Accessed May 2021]</li>
+                        <li>Davies MJ, D’Alessio DA, Fradkin F, et al. Management of hyperglycemia in type 2 diabetes, 2018. A consensus report by the American Diabetes Association (ADA) and the
+                        European Association for the Study of Diabetes (EASD). Diabetes Care 2018;41:2669-2701</li>
+                    </ol>
+                    <button class="btn">start assessment</button> <br>
+                    <span>Job Code: PC-GB-104631 <br>Date of preparation: July 2021</span>
+                </div>
+              
+
+                <!-- Tab-4 content -->
+                <div id="tab4-content">
+                    <h3>First and second intensification</h3>
+                    <hr class="line2">
+                    <p>There is evidence for the role of clinical characteristics in informing the choice of first intensification medication (treatment with 2 non-insulin blood glucose lowering therapies in combination: dual therapy) after failure to control blood glucose with metformin and lifestyle interventions. These include the presence of established atherosclerotic cardiovascular disease (ASCVD), for which there is now evidence to support the use of SGLT2 inhibitors and ucagon-like peptide-1 receptor agonists (GLP-1 RAs). There is also evidence that other comorbidities such as heart failure or chronic kidney disease, age and frailty, and the safety and tolerability of medication are also important when selecting first intensification medication. NICE is updating its type 2 diabetes guideline to take account of data from key cardiovascular outcome trials on SGLT2 inhibitors and GLP-1RAs.1 <br><br>
+                       
+                    <p><strong>In the self-assessment that follows, hypothetical case scenarios based on fictitious
+                        patients are presented. Please refer to the relevant Summary of Product Characteristics
+                        before prescribing any of the medications mentioned.</strong></p>
+                    <h6><strong>Boehringer Ingelheim has no control of the content of the external websites listed in References below.</strong></h6>
+                    <hr class="line" id="line3">
+                    <h5>References</h5>
+                    <ol>
+                        <li>Scottish Intercollegiate Guidelines Network. [SIGN 154] Pharmacological management of type 2 diabetes; November 2017. https://www.sign.ac.uk/media/1090/sign154.pdf
+                        [Accessed May 2021]</li>
+                        <li>NICE [NG 28] Type 2 diabetes in adults: management, December 2015 (Updated 2019). https://www.nice.org.uk/guidance/ng28 2. [Accessed May 2021]</li>
+                        <li>Davies MJ, D’Alessio DA, Fradkin F, et al. Management of hyperglycemia in type 2 diabetes, 2018. A consensus report by the American Diabetes Association (ADA) and the
+                        European Association for the Study of Diabetes (EASD). Diabetes Care 2018;41:2669-2701</li>
+                    </ol>
+                    <button class="btn">start assessment</button> <br>
+                    <span>Job Code: PC-GB-104631 <br>Date of preparation: July 2021</span>
+                </div>
+            
+
+                 <!-- Tab-5 content -->
+                <div id="tab5-content">
+                    <h3>Frail and/or elderly patients</h3>
+                    <hr class="line2">
+                    <p>There is growing recognition that intensive glucose-lowering treatment in type 2 diabetes has limited benefits and may even dangerous in older people.1 This should prompt clinicians to modify HbA1c targets in patients who are very frail or have limited life expectancy. Guidance developed by the University of Exeter Medical School in collaboration with NHS England commends a target of 64mmol/mol (8.0%) for adults with moderate frailty, and 70mmol/mol (8.5%) for the very frail, elderly patient. The guidance hat metformin may be contraindicated in up to 50% of frail or very frail elderly patients who are likely to have a degree of renal impairment.1 Other agents, including sulfonylureas, pioglitazone, GLP-1 agonists and SGLT2 inhibitors may all have disadvantages in frail, elderly patients. DPP-4 inhibitors have been used in frail and elderly patients, and have similar efficacy in older patients to that inyounger populations. <br><br> 1 railty is fast becoming a critical complication for healthcare professionals to consider, when managing older people and their type 2 diabetes, providing that it has actually been identified for an individual patient. Now more than ever there needs to be clear guidance and support for healthcare professionals in managing this group, especially as the numbers will continue to grow as the population ages.
+
+                    <div class="elderly-frail d-flex justify-content-center">
+                        <img src="/images/image-1.png" alt="ideal glycaemic target" class="img-fluid">
+                    </div>
+
+                    <div class="elderly-frail d-flex justify-content-center">
+                        <img src="/images/image-2.png" alt="ideal glycaemic target" class="img-fluid">
+                    </div>
+
+                    <div class="elderly-frail text-center" id="elderly-frail-last">
+                        <img src="/images/image-3.png" alt="ideal glycaemic target" class="img-fluid">
+                        <p>Adapted from Strain WD et al. Diabet Med. 2018;35:838–45.</p>
+                    </div>
+                    <div class="elderly-content">
+                        <p><strong>In the self-assessment that follows, hypothetical case scenarios based on fictitious patients are presented. Please refer to the relevant Summary of Product Characteristics before prescribing any of the medications mentioned.</strong></p>
+
+                        <h6><strong>Boehringer Ingelheim has no control of the content of the external websites listed in References below.</strong></h6>
+                        <hr class="line" id="line3">
+                        <h5>References</h5>
+                        <ol>
+                            <li>Scottish Intercollegiate Guidelines Network. [SIGN 154] Pharmacological management of type 2 diabetes; November 2017. https://www.sign.ac.uk/media/1090/sign154.pdf
+                            [Accessed May 2021]</li>
+                            <li>NICE [NG 28] Type 2 diabetes in adults: management, December 2015 (Updated 2019). https://www.nice.org.uk/guidance/ng28 2. [Accessed May 2021]</li>
+                            <li>Davies MJ, D’Alessio DA, Fradkin F, et al. Management of hyperglycemia in type 2 diabetes, 2018. A consensus report by the American Diabetes Association (ADA) and the
+                            European Association for the Study of Diabetes (EASD). Diabetes Care 2018;41:2669-2701</li>
+                        </ol>
+                        <button class="btn">start assessment</button> <br>
+                        <span>Job Code: PC-GB-104631 <br>Date of preparation: July 2021</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="line">
+
+        <div class="row">
+            <div class="logo col-sm-6">
+                <img src="/images/left-logo.png" alt="Logo-1" class="img-fluid">
+            </div>
+            <div class="logo col-sm-6">
+                <img src="/images/right-logo.png" alt="Logo-1" class="img-fluid pt-2">
+            </div>
+        </div>
+
+        <a href="/pages/Quiz.html" target="_blank" class="takeQuiz">take a quiz</a>
+    </div>
+
+
+    <script src="/script/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

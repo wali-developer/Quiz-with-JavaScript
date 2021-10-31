@@ -1,0 +1,98 @@
+@mixin button {
+    padding: 20px 30px;
+    border: 3px solid $border-color;
+    border-radius: 10px;
+    text-transform: uppercase;
+    color: $head4-color;
+    font-weight: bolder;
+    font-size: 20px;
+    margin-top: -40px;
+    margin-left: 40px;
+    background-color: white;
+    &:hover{
+        color: rgb(255, 168, 52);
+        background-color: rgb(48, 45, 131);
+    }
+    @include medium-screen(){
+        padding: 10px 12px;
+        width: 170px;
+        font-size: 16px;
+    }
+    @include  small-screen(){
+        padding: 10px 10px;
+        width: 130px;
+        font-size: 15px;
+    }
+}
+
+
+@mixin line {
+    margin: 0;
+    height: 7px;
+    background-color: $border-color;
+    border: none;
+}
+
+@mixin line2 {
+    margin: 0;
+    height: 5px;
+    background-color: $border-color;
+    border: none;
+    width: 220px;
+    border-radius: 60px;
+}
+
+
+@mixin link {    
+    color: $head4-color;
+    text-decoration: underline;
+    &:hover{
+        text-decoration: $head4-color;
+        color: darken($head4-color, 50%)
+    }
+}
+
+@mixin  list-item {
+    font-size: $text-size;
+    color: $body-color;
+    padding: 7px 0;
+}
+@mixin li-before {
+    content: "\2022";
+    color: $head4-color;
+    font-weight: bold;
+    display: inline-block; 
+    width: 16px;
+    font-weight: bolder;
+    margin-left: -1em;
+}
+
+//=== Media Queries ===
+@mixin small-screen() {
+    @media only screen and (max-width: 490px){
+      @content;
+    }
+}
+
+@mixin small-medium-screen() {
+    @media only screen and (max-width: 660px){
+      @content;
+    }
+}
+@mixin medium-screen() {
+    @media only screen and (max-width: 850px){
+      @content;
+    }
+}
+  
+@mixin large-screen() {
+    @media only screen and (max-width: 1170px){
+      @content;
+    }
+}
+  
+@mixin xlarge-screen() {
+    @media only screen and (max-width: 1400px){
+      @content;
+    }
+}

@@ -1,0 +1,1005 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #515355;
+  overflow-x: hidden;
+}
+
+#container {
+  margin: 0;
+  padding: 0;
+}
+
+#container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 40px 45px;
+}
+
+@media only screen and (max-width: 490px) {
+  #container .row {
+    padding: 35px 10px;
+  }
+}
+
+#container .logo {
+  max-width: 210px;
+}
+
+@media only screen and (max-width: 490px) {
+  #container .logo {
+    text-align: center;
+    max-width: 150px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  #container .logo {
+    max-width: 180px;
+  }
+}
+
+#container .line {
+  margin: 0;
+  height: 7px;
+  background-color: #ffa834;
+  border: none;
+}
+
+#container .mainImage {
+  padding: 50px 30px;
+  background-color: #312d82;
+}
+
+@media only screen and (max-width: 850px) {
+  #container .mainImage {
+    padding: 40px 0px;
+  }
+}
+
+#container .mainImage .main-img {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#container .btn {
+  padding: 20px 30px;
+  border: 3px solid #ffa834;
+  border-radius: 10px;
+  text-transform: uppercase;
+  color: #312d82;
+  font-weight: bolder;
+  font-size: 20px;
+  margin-top: -40px;
+  margin-left: 40px;
+  background-color: white;
+}
+
+#container .btn:hover {
+  color: #ffa834;
+  background-color: #302d83;
+}
+
+@media only screen and (max-width: 850px) {
+  #container .btn {
+    padding: 10px 12px;
+    width: 170px;
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  #container .btn {
+    padding: 10px 10px;
+    width: 130px;
+    font-size: 15px;
+  }
+}
+
+#container .paragraphs {
+  text-align: right;
+  padding: 40px 45px;
+  line-height: 0.6;
+  font-size: 19px;
+  color: #312d82;
+  font-weight: 600;
+}
+
+#container .paragraphs p a {
+  color: #312d82;
+  text-decoration: underline;
+}
+
+#container .paragraphs p a:hover {
+  -webkit-text-decoration: #312d82;
+          text-decoration: #312d82;
+  color: black;
+}
+
+@media only screen and (max-width: 1170px) {
+  #container .paragraphs {
+    line-height: 1.5;
+    text-align: right;
+    padding: 35px 25px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  #container .paragraphs {
+    text-align: left;
+  }
+}
+
+#container .para {
+  font-size: 20px;
+  color: #312d82;
+  font-weight: bolder;
+  padding: 0 45px;
+}
+
+#container .para a {
+  color: #312d82;
+  text-decoration: underline;
+}
+
+#container .para a:hover {
+  -webkit-text-decoration: #312d82;
+          text-decoration: #312d82;
+  color: black;
+}
+
+@media only screen and (max-width: 850px) {
+  #container .para {
+    padding: 35px 25px;
+  }
+}
+
+#container #introduction {
+  padding: 40px 45px;
+}
+
+@media only screen and (max-width: 850px) {
+  #container #introduction {
+    padding: 35px 25px;
+  }
+}
+
+#container #introduction h2 {
+  font-weight: bolder;
+  color: #515355;
+  padding-bottom: 8px;
+}
+
+#container #introduction p {
+  font-size: 19px;
+  color: #515355;
+  padding-bottom: 20px;
+}
+
+#container #introduction .line2 {
+  margin: 0;
+  height: 7px;
+  background-color: #ffa834;
+  border: none;
+  height: 5px;
+}
+
+#container #introduction h5 {
+  font-weight: bold;
+  padding-top: 20px;
+  color: #515355;
+}
+
+#container #introduction ol {
+  padding-left: 25px;
+}
+
+#container #introduction ol li {
+  font-size: 15px;
+  color: black;
+}
+
+#container #module {
+  background-color: #312d82;
+  padding-bottom: 60px;
+}
+
+#container #module .row {
+  padding: 40px 45px;
+}
+
+@media only screen and (max-width: 850px) {
+  #container #module .row {
+    padding: 35px 25px;
+  }
+}
+
+#container #module .row .content .objective {
+  background-color: white;
+  padding: 20px 30px;
+  border: 3px solid #ffa834;
+  border-radius: 15px;
+  padding-bottom: 0;
+}
+
+#container #module .row .content .objective h3 {
+  color: #464749;
+  font-weight: bold;
+}
+
+#container #module .row .content .objective .line2 {
+  margin: 0;
+  height: 5px;
+  background-color: #ffa834;
+  border: none;
+  width: 220px;
+  border-radius: 60px;
+  margin: 15px 0;
+}
+
+#container #module .row .content .objective h5 {
+  font-weight: bold;
+  font-size: 20px;
+  color: #515355;
+}
+
+#container #module .row .content .objective ul {
+  padding-left: 22px;
+  list-style: none;
+}
+
+#container #module .row .content .objective ul li {
+  font-size: 19px;
+  color: #515355;
+  padding: 7px 0;
+}
+
+#container #module .row .content .objective ul li::before {
+  content: "\2022";
+  color: #312d82;
+  font-weight: bold;
+  display: inline-block;
+  width: 16px;
+  font-weight: bolder;
+  margin-left: -1em;
+}
+
+#container #module .row .content #module-right {
+  background-color: #312d82;
+  border: none;
+  border-radius: 0;
+  padding-left: 60px;
+}
+
+#container #module .row .content #module-right h3 {
+  padding-bottom: 10px;
+}
+
+#container #module .row .content #module-right li {
+  line-height: 1.8;
+}
+
+#container #module .row .content #module-right h3, #container #module .row .content #module-right h5, #container #module .row .content #module-right li {
+  color: white;
+}
+
+#container #module .row .content #module-right li::before {
+  color: #ffa834;
+}
+
+#container #module #sec-row div p {
+  font-size: 19px;
+}
+
+#container #module #sec-row div .line2 {
+  margin: 0;
+  height: 5px;
+  background-color: #ffa834;
+  border: none;
+  width: 220px;
+  border-radius: 60px;
+  width: 5px;
+  height: 150px;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 850px) {
+  #container #module #sec-row div .line2 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1170px) {
+  #container #module #sec-row div #module-paragrapgh {
+    padding-left: 30px;
+    padding: 20px;
+  }
+}
+
+#container #module #sec-row div #module-paragrapgh a {
+  color: #312d82;
+  text-decoration: underline;
+  color: white;
+}
+
+#container #module #sec-row div #module-paragrapgh a:hover {
+  -webkit-text-decoration: #312d82;
+          text-decoration: #312d82;
+  color: black;
+}
+
+#container #module #sec-row #module-img {
+  margin-left: 25px;
+}
+
+@media only screen and (max-width: 850px) {
+  #container #module #sec-row #module-img {
+    width: 20%;
+  }
+}
+
+#container #module #sec-row #module-img img {
+  width: 90px;
+  border: 3px solid #ffa834;
+  padding: 17px 12px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+#container #module .reportPara {
+  padding-right: 50px;
+  margin-top: -40px;
+}
+
+#container #module .reportPara p {
+  text-align: center;
+  padding: 10px 25px;
+  border: 3px solid #ffa834;
+  font-size: 20px;
+  color: #515355;
+  background-color: white;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+#container .tabs .tabs-button {
+  padding: 40px 45px;
+  padding: 30px 0;
+  text-align: center;
+}
+
+@media only screen and (max-width: 850px) {
+  #container .tabs .tabs-button {
+    padding: 35px 25px;
+  }
+}
+
+#container .tabs .tabs-button button {
+  padding: 20px 30px;
+  border: 3px solid #ffa834;
+  border-radius: 10px;
+  text-transform: uppercase;
+  color: #312d82;
+  font-weight: bolder;
+  font-size: 20px;
+  margin-top: -40px;
+  margin-left: 40px;
+  background-color: white;
+  padding: 4px 38px;
+  margin: 0;
+  margin-right: 5px;
+  font-weight: normal;
+  border: 3px solid #312d82;
+}
+
+#container .tabs .tabs-button button:hover {
+  color: #ffa834;
+  background-color: #302d83;
+}
+
+@media only screen and (max-width: 850px) {
+  #container .tabs .tabs-button button {
+    padding: 10px 12px;
+    width: 170px;
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  #container .tabs .tabs-button button {
+    padding: 10px 10px;
+    width: 130px;
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 1170px) {
+  #container .tabs .tabs-button button {
+    padding: 7px 0;
+    width: 230px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  #container .tabs .tabs-button button {
+    margin-bottom: 5px;
+  }
+}
+
+#container .tabs .tabs-button button i {
+  font-size: 36px;
+  color: #312d82;
+  background-color: #ffa834;
+  border-radius: 50%;
+  border: 1.5px solid #ffa834;
+  position: absolute;
+  margin-top: -45px;
+  margin-left: 7px;
+  display: none;
+}
+
+@media only screen and (max-width: 660px) {
+  #container .tabs .tabs-button button i {
+    font-size: 28px;
+  }
+}
+
+#container .tabs .tabs-button button:hover {
+  color: white;
+  background-color: #312d82;
+}
+
+#container .tabs .tabs-button button:active {
+  background-color: #312d82;
+  color: white;
+  border: none;
+}
+
+@media only screen and (max-width: 1170px) {
+  #container .tabs .tabs-button #tabBtn-1 {
+    width: 135px;
+  }
+}
+
+@media only screen and (max-width: 1170px) {
+  #container .tabs .tabs-button #tabBtn-3, #container .tabs .tabs-button #tabBtn-4, #container .tabs .tabs-button #tabBtn-5 {
+    width: 180px;
+  }
+}
+
+#container .tabs #tab-content #tab1-content, #container .tabs #tab-content #tab2-content, #container .tabs #tab-content #tab3-content, #container .tabs #tab-content #tab4-content, #container .tabs #tab-content #tab5-content {
+  padding: 40px 45px;
+}
+
+@media only screen and (max-width: 850px) {
+  #container .tabs #tab-content #tab1-content, #container .tabs #tab-content #tab2-content, #container .tabs #tab-content #tab3-content, #container .tabs #tab-content #tab4-content, #container .tabs #tab-content #tab5-content {
+    padding: 35px 25px;
+  }
+}
+
+#container .tabs #tab-content #tab1-content h3, #container .tabs #tab-content #tab2-content h3, #container .tabs #tab-content #tab3-content h3, #container .tabs #tab-content #tab4-content h3, #container .tabs #tab-content #tab5-content h3 {
+  color: #464749;
+  font-weight: bold;
+}
+
+#container .tabs #tab-content #tab1-content .line2, #container .tabs #tab-content #tab2-content .line2, #container .tabs #tab-content #tab3-content .line2, #container .tabs #tab-content #tab4-content .line2, #container .tabs #tab-content #tab5-content .line2 {
+  margin: 0;
+  height: 5px;
+  background-color: #ffa834;
+  border: none;
+  width: 220px;
+  border-radius: 60px;
+  margin: 15px 0;
+}
+
+#container .tabs #tab-content #tab1-content p, #container .tabs #tab-content #tab2-content p, #container .tabs #tab-content #tab3-content p, #container .tabs #tab-content #tab4-content p, #container .tabs #tab-content #tab5-content p {
+  font-size: 19px;
+  color: #515355;
+}
+
+#container .tabs #tab-content #tab1-content #head5, #container .tabs #tab-content #tab2-content #head5, #container .tabs #tab-content #tab3-content #head5, #container .tabs #tab-content #tab4-content #head5, #container .tabs #tab-content #tab5-content #head5 {
+  color: #464749;
+}
+
+#container .tabs #tab-content #tab1-content ul, #container .tabs #tab-content #tab2-content ul, #container .tabs #tab-content #tab3-content ul, #container .tabs #tab-content #tab4-content ul, #container .tabs #tab-content #tab5-content ul {
+  padding-left: 22px;
+  list-style: none;
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+#container .tabs #tab-content #tab1-content ul li, #container .tabs #tab-content #tab2-content ul li, #container .tabs #tab-content #tab3-content ul li, #container .tabs #tab-content #tab4-content ul li, #container .tabs #tab-content #tab5-content ul li {
+  font-size: 19px;
+  color: #515355;
+  padding: 7px 0;
+  padding: 3px 0;
+}
+
+#container .tabs #tab-content #tab1-content ul li::before, #container .tabs #tab-content #tab2-content ul li::before, #container .tabs #tab-content #tab3-content ul li::before, #container .tabs #tab-content #tab4-content ul li::before, #container .tabs #tab-content #tab5-content ul li::before {
+  content: "\2022";
+  color: #312d82;
+  font-weight: bold;
+  display: inline-block;
+  width: 16px;
+  font-weight: bolder;
+  margin-left: -1em;
+  margin-left: 1em;
+  color: #312d82;
+}
+
+@media only screen and (max-width: 1170px) {
+  #container .tabs #tab-content #tab1-content ul li::before, #container .tabs #tab-content #tab2-content ul li::before, #container .tabs #tab-content #tab3-content ul li::before, #container .tabs #tab-content #tab4-content ul li::before, #container .tabs #tab-content #tab5-content ul li::before {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+#container .tabs #tab-content #tab1-content ul .nested-list::before, #container .tabs #tab-content #tab2-content ul .nested-list::before, #container .tabs #tab-content #tab3-content ul .nested-list::before, #container .tabs #tab-content #tab4-content ul .nested-list::before, #container .tabs #tab-content #tab5-content ul .nested-list::before {
+  color: #ffa834;
+}
+
+#container .tabs #tab-content #tab1-content h6, #container .tabs #tab-content #tab2-content h6, #container .tabs #tab-content #tab3-content h6, #container .tabs #tab-content #tab4-content h6, #container .tabs #tab-content #tab5-content h6 {
+  padding: 10px 0;
+}
+
+#container .tabs #tab-content #tab1-content #line3, #container .tabs #tab-content #tab2-content #line3, #container .tabs #tab-content #tab3-content #line3, #container .tabs #tab-content #tab4-content #line3, #container .tabs #tab-content #tab5-content #line3 {
+  margin: 0;
+  height: 7px;
+  background-color: #ffa834;
+  border: none;
+  height: 5px;
+  margin: 25px 0;
+}
+
+#container .tabs #tab-content #tab1-content h5, #container .tabs #tab-content #tab2-content h5, #container .tabs #tab-content #tab3-content h5, #container .tabs #tab-content #tab4-content h5, #container .tabs #tab-content #tab5-content h5 {
+  font-weight: bold;
+  color: #1e1f20;
+}
+
+#container .tabs #tab-content #tab1-content ol, #container .tabs #tab-content #tab2-content ol, #container .tabs #tab-content #tab3-content ol, #container .tabs #tab-content #tab4-content ol, #container .tabs #tab-content #tab5-content ol {
+  padding-left: 30px;
+}
+
+#container .tabs #tab-content #tab1-content ol li, #container .tabs #tab-content #tab2-content ol li, #container .tabs #tab-content #tab3-content ol li, #container .tabs #tab-content #tab4-content ol li, #container .tabs #tab-content #tab5-content ol li {
+  color: #1e1f20;
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+  padding: 2px 0;
+}
+
+#container .tabs #tab-content #tab1-content button, #container .tabs #tab-content #tab2-content button, #container .tabs #tab-content #tab3-content button, #container .tabs #tab-content #tab4-content button, #container .tabs #tab-content #tab5-content button {
+  padding: 20px 30px;
+  border: 3px solid #ffa834;
+  border-radius: 10px;
+  text-transform: uppercase;
+  color: #312d82;
+  font-weight: bolder;
+  font-size: 20px;
+  margin-top: -40px;
+  margin-left: 40px;
+  background-color: white;
+  margin-top: 0;
+  margin-left: 0;
+  margin: 20px 0;
+}
+
+#container .tabs #tab-content #tab1-content button:hover, #container .tabs #tab-content #tab2-content button:hover, #container .tabs #tab-content #tab3-content button:hover, #container .tabs #tab-content #tab4-content button:hover, #container .tabs #tab-content #tab5-content button:hover {
+  color: #ffa834;
+  background-color: #302d83;
+}
+
+@media only screen and (max-width: 850px) {
+  #container .tabs #tab-content #tab1-content button, #container .tabs #tab-content #tab2-content button, #container .tabs #tab-content #tab3-content button, #container .tabs #tab-content #tab4-content button, #container .tabs #tab-content #tab5-content button {
+    padding: 10px 12px;
+    width: 170px;
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  #container .tabs #tab-content #tab1-content button, #container .tabs #tab-content #tab2-content button, #container .tabs #tab-content #tab3-content button, #container .tabs #tab-content #tab4-content button, #container .tabs #tab-content #tab5-content button {
+    padding: 10px 10px;
+    width: 130px;
+    font-size: 15px;
+  }
+}
+
+#container .tabs #tab-content #tab1-content span, #container .tabs #tab-content #tab2-content span, #container .tabs #tab-content #tab3-content span, #container .tabs #tab-content #tab4-content span, #container .tabs #tab-content #tab5-content span {
+  font-size: 15px;
+  color: #1e1f20;
+}
+
+#container .tabs #tab-content #tab5-content {
+  padding: 0;
+}
+
+#container .tabs #tab-content #tab5-content h3, #container .tabs #tab-content #tab5-content .line2, #container .tabs #tab-content #tab5-content p {
+  margin: 10px 40px;
+}
+
+@media only screen and (max-width: 850px) {
+  #container .tabs #tab-content #tab5-content h3, #container .tabs #tab-content #tab5-content .line2, #container .tabs #tab-content #tab5-content p {
+    margin: 35px 25px;
+  }
+}
+
+#container .tabs #tab-content #tab5-content .elderly-frail {
+  padding: 40px 0;
+  margin-top: 25px;
+  margin-bottom: 50px;
+  background-color: #312d82;
+}
+
+@media only screen and (max-width: 850px) {
+  #container .tabs #tab-content #tab5-content .elderly-frail {
+    padding: 40px;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  #container .tabs #tab-content #tab5-content .elderly-frail {
+    padding: 20px;
+  }
+}
+
+#container .tabs #tab-content #tab5-content .elderly-frail img {
+  padding: 0;
+  border: 3px solid #ffa834;
+  border-radius: 10px;
+}
+
+#container .tabs #tab-content #tab5-content .elderly-frail p {
+  color: white;
+  text-align: left;
+  font-size: 16px;
+}
+
+#container .tabs #tab-content #tab5-content #elderly-frail-last {
+  margin-bottom: 0;
+}
+
+#container .tabs #tab-content #tab5-content .elderly-content {
+  padding: 40px 45px;
+}
+
+@media only screen and (max-width: 850px) {
+  #container .tabs #tab-content #tab5-content .elderly-content {
+    padding: 35px 25px;
+  }
+}
+
+#container .tabs #tab-content #tab5-content .elderly-content p {
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+#container .takeQuiz {
+  padding: 20px 30px;
+  border: 3px solid #ffa834;
+  border-radius: 10px;
+  text-transform: uppercase;
+  color: #312d82;
+  font-weight: bolder;
+  font-size: 20px;
+  margin-top: -40px;
+  margin-left: 40px;
+  background-color: white;
+  background-color: #ffa834;
+  border: 3px solid #312d82;
+  color: #312d82;
+  padding: 15px 50px;
+  text-decoration: none;
+  position: fixed;
+  bottom: 3%;
+  right: 1%;
+}
+
+#container .takeQuiz:hover {
+  color: #ffa834;
+  background-color: #302d83;
+}
+
+@media only screen and (max-width: 850px) {
+  #container .takeQuiz {
+    padding: 10px 12px;
+    width: 170px;
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  #container .takeQuiz {
+    padding: 10px 10px;
+    width: 130px;
+    font-size: 15px;
+  }
+}
+
+#container .takeQuiz:hover {
+  border: 3px solid #ffa834;
+}
+
+.quiz .question1 .question1Content, .quiz .question2 .question1Content, .quiz .question3 .question1Content, .quiz .question4 .question1Content, .quiz .question5 .question1Content {
+  padding: 40px 45px;
+  padding-top: 0;
+  padding-bottom: 90px;
+}
+
+@media only screen and (max-width: 850px) {
+  .quiz .question1 .question1Content, .quiz .question2 .question1Content, .quiz .question3 .question1Content, .quiz .question4 .question1Content, .quiz .question5 .question1Content {
+    padding: 35px 25px;
+  }
+}
+
+.quiz .question1 .question1Content h3, .quiz .question2 .question1Content h3, .quiz .question3 .question1Content h3, .quiz .question4 .question1Content h3, .quiz .question5 .question1Content h3 {
+  font-weight: bolder;
+  color: #464749;
+}
+
+.quiz .question1 .question1Content p, .quiz .question2 .question1Content p, .quiz .question3 .question1Content p, .quiz .question4 .question1Content p, .quiz .question5 .question1Content p {
+  font-size: 19px;
+  padding: 10px 0;
+}
+
+@media only screen and (max-width: 660px) {
+  .quiz .question1 .question1Content p, .quiz .question2 .question1Content p, .quiz .question3 .question1Content p, .quiz .question4 .question1Content p, .quiz .question5 .question1Content p {
+    font-size: 17px;
+  }
+}
+
+.quiz .question1 .question1Content .options, .quiz .question2 .question1Content .options, .quiz .question3 .question1Content .options, .quiz .question4 .question1Content .options, .quiz .question5 .question1Content .options {
+  font-size: 19px;
+}
+
+@media only screen and (max-width: 660px) {
+  .quiz .question1 .question1Content .options, .quiz .question2 .question1Content .options, .quiz .question3 .question1Content .options, .quiz .question4 .question1Content .options, .quiz .question5 .question1Content .options {
+    font-size: 17px;
+  }
+}
+
+.quiz .question1 .question1Content .options .option .twoOption, .quiz .question2 .question1Content .options .option .twoOption, .quiz .question3 .question1Content .options .option .twoOption, .quiz .question4 .question1Content .options .option .twoOption, .quiz .question5 .question1Content .options .option .twoOption {
+  padding: 20px 30px;
+}
+
+@media only screen and (max-width: 850px) {
+  .quiz .question1 .question1Content .options .option .twoOption, .quiz .question2 .question1Content .options .option .twoOption, .quiz .question3 .question1Content .options .option .twoOption, .quiz .question4 .question1Content .options .option .twoOption, .quiz .question5 .question1Content .options .option .twoOption {
+    padding: 0 20px;
+  }
+}
+
+@media only screen and (max-width: 1170px) {
+  .quiz .question1 .question1Content .options .option .twoOption, .quiz .question2 .question1Content .options .option .twoOption, .quiz .question3 .question1Content .options .option .twoOption, .quiz .question4 .question1Content .options .option .twoOption, .quiz .question5 .question1Content .options .option .twoOption {
+    padding: 0 50px;
+  }
+}
+
+.quiz .question1 .question1Content .options .option .twoOption label, .quiz .question2 .question1Content .options .option .twoOption label, .quiz .question3 .question1Content .options .option .twoOption label, .quiz .question4 .question1Content .options .option .twoOption label, .quiz .question5 .question1Content .options .option .twoOption label {
+  padding: 6px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (max-width: 850px) {
+  .quiz .question1 .question1Content .options .option .twoOption label, .quiz .question2 .question1Content .options .option .twoOption label, .quiz .question3 .question1Content .options .option .twoOption label, .quiz .question4 .question1Content .options .option .twoOption label, .quiz .question5 .question1Content .options .option .twoOption label {
+    padding: 10px 0;
+    line-height: 1;
+  }
+}
+
+.quiz .question1 .question1Content .options .option .twoOption label .radio, .quiz .question2 .question1Content .options .option .twoOption label .radio, .quiz .question3 .question1Content .options .option .twoOption label .radio, .quiz .question4 .question1Content .options .option .twoOption label .radio, .quiz .question5 .question1Content .options .option .twoOption label .radio {
+  width: 30px;
+  height: 30px;
+  color: orange;
+}
+
+@media only screen and (max-width: 490px) {
+  .quiz .question1 .question1Content .options .option .twoOption label .radio, .quiz .question2 .question1Content .options .option .twoOption label .radio, .quiz .question3 .question1Content .options .option .twoOption label .radio, .quiz .question4 .question1Content .options .option .twoOption label .radio, .quiz .question5 .question1Content .options .option .twoOption label .radio {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .quiz .question1 .question1Content .options .option .twoOption label .radio, .quiz .question2 .question1Content .options .option .twoOption label .radio, .quiz .question3 .question1Content .options .option .twoOption label .radio, .quiz .question4 .question1Content .options .option .twoOption label .radio, .quiz .question5 .question1Content .options .option .twoOption label .radio {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.quiz .question1 .question1Content .options .option .twoOption label span, .quiz .question2 .question1Content .options .option .twoOption label span, .quiz .question3 .question1Content .options .option .twoOption label span, .quiz .question4 .question1Content .options .option .twoOption label span, .quiz .question5 .question1Content .options .option .twoOption label span {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.quiz .question1 .next, .quiz .question2 .next, .quiz .question3 .next, .quiz .question4 .next, .quiz .question5 .next {
+  position: absolute;
+  right: 3%;
+  margin-top: -35px;
+}
+
+@media only screen and (max-width: 850px) {
+  .quiz .question1 .next, .quiz .question2 .next, .quiz .question3 .next, .quiz .question4 .next, .quiz .question5 .next {
+    margin-top: -20px;
+  }
+}
+
+.quiz .question1 .next button, .quiz .question2 .next button, .quiz .question3 .next button, .quiz .question4 .next button, .quiz .question5 .next button {
+  padding: 20px 30px;
+  border: 3px solid #ffa834;
+  border-radius: 10px;
+  text-transform: uppercase;
+  color: #312d82;
+  font-weight: bolder;
+  font-size: 20px;
+  margin-top: -40px;
+  margin-left: 40px;
+  background-color: white;
+  padding: 20px 80px;
+  margin-top: 0px;
+}
+
+.quiz .question1 .next button:hover, .quiz .question2 .next button:hover, .quiz .question3 .next button:hover, .quiz .question4 .next button:hover, .quiz .question5 .next button:hover {
+  color: #ffa834;
+  background-color: #302d83;
+}
+
+@media only screen and (max-width: 850px) {
+  .quiz .question1 .next button, .quiz .question2 .next button, .quiz .question3 .next button, .quiz .question4 .next button, .quiz .question5 .next button {
+    padding: 10px 12px;
+    width: 170px;
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  .quiz .question1 .next button, .quiz .question2 .next button, .quiz .question3 .next button, .quiz .question4 .next button, .quiz .question5 .next button {
+    padding: 10px 10px;
+    width: 130px;
+    font-size: 15px;
+  }
+}
+
+.quiz .question1 .Remarks, .quiz .question2 .Remarks, .quiz .question3 .Remarks, .quiz .question4 .Remarks, .quiz .question5 .Remarks {
+  background-color: #312d82;
+  padding: 0;
+}
+
+.quiz .question1 .Remarks .correctRemarksContent, .quiz .question1 .Remarks .incorrectRemarksContent, .quiz .question2 .Remarks .correctRemarksContent, .quiz .question2 .Remarks .incorrectRemarksContent, .quiz .question3 .Remarks .correctRemarksContent, .quiz .question3 .Remarks .incorrectRemarksContent, .quiz .question4 .Remarks .correctRemarksContent, .quiz .question4 .Remarks .incorrectRemarksContent, .quiz .question5 .Remarks .correctRemarksContent, .quiz .question5 .Remarks .incorrectRemarksContent {
+  padding: 60px 45px;
+  padding-bottom: 100px;
+  display: none;
+}
+
+@media only screen and (max-width: 850px) {
+  .quiz .question1 .Remarks .correctRemarksContent, .quiz .question1 .Remarks .incorrectRemarksContent, .quiz .question2 .Remarks .correctRemarksContent, .quiz .question2 .Remarks .incorrectRemarksContent, .quiz .question3 .Remarks .correctRemarksContent, .quiz .question3 .Remarks .incorrectRemarksContent, .quiz .question4 .Remarks .correctRemarksContent, .quiz .question4 .Remarks .incorrectRemarksContent, .quiz .question5 .Remarks .correctRemarksContent, .quiz .question5 .Remarks .incorrectRemarksContent {
+    padding: 35px 25px;
+  }
+}
+
+.quiz .question1 .Remarks .correctRemarksContent h3, .quiz .question1 .Remarks .incorrectRemarksContent h3, .quiz .question2 .Remarks .correctRemarksContent h3, .quiz .question2 .Remarks .incorrectRemarksContent h3, .quiz .question3 .Remarks .correctRemarksContent h3, .quiz .question3 .Remarks .incorrectRemarksContent h3, .quiz .question4 .Remarks .correctRemarksContent h3, .quiz .question4 .Remarks .incorrectRemarksContent h3, .quiz .question5 .Remarks .correctRemarksContent h3, .quiz .question5 .Remarks .incorrectRemarksContent h3 {
+  font-weight: bold;
+  color: white;
+}
+
+.quiz .question1 .Remarks .correctRemarksContent .line2, .quiz .question1 .Remarks .incorrectRemarksContent .line2, .quiz .question2 .Remarks .correctRemarksContent .line2, .quiz .question2 .Remarks .incorrectRemarksContent .line2, .quiz .question3 .Remarks .correctRemarksContent .line2, .quiz .question3 .Remarks .incorrectRemarksContent .line2, .quiz .question4 .Remarks .correctRemarksContent .line2, .quiz .question4 .Remarks .incorrectRemarksContent .line2, .quiz .question5 .Remarks .correctRemarksContent .line2, .quiz .question5 .Remarks .incorrectRemarksContent .line2 {
+  margin: 0;
+  height: 5px;
+  background-color: #ffa834;
+  border: none;
+  width: 220px;
+  border-radius: 60px;
+  margin: 15px 0;
+}
+
+.quiz .question1 .Remarks .correctRemarksContent p, .quiz .question1 .Remarks .incorrectRemarksContent p, .quiz .question2 .Remarks .correctRemarksContent p, .quiz .question2 .Remarks .incorrectRemarksContent p, .quiz .question3 .Remarks .correctRemarksContent p, .quiz .question3 .Remarks .incorrectRemarksContent p, .quiz .question4 .Remarks .correctRemarksContent p, .quiz .question4 .Remarks .incorrectRemarksContent p, .quiz .question5 .Remarks .correctRemarksContent p, .quiz .question5 .Remarks .incorrectRemarksContent p {
+  color: white;
+  font-size: 19px;
+}
+
+.quiz .question1 .quiz-line, .quiz .question2 .quiz-line, .quiz .question3 .quiz-line, .quiz .question4 .quiz-line, .quiz .question5 .quiz-line {
+  margin: 0;
+  height: 7px;
+  background-color: #ffa834;
+  border: none;
+  height: 5px;
+}
+
+.quiz .question2, .quiz .question3, .quiz .question4, .quiz .question5 {
+  display: none;
+}
+
+#quizPageContent {
+  padding: 40px 45px;
+}
+
+@media only screen and (max-width: 850px) {
+  #quizPageContent {
+    padding: 35px 25px;
+  }
+}
+
+#quizPageContent h5 {
+  font-weight: bold;
+  color: #464749;
+}
+
+#quizPageContent ol {
+  padding-left: 15px;
+}
+
+#quizPageContent ol li {
+  color: black;
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+  padding: 2px 0;
+}
+
+#quizPageContent button {
+  padding: 20px 30px;
+  border: 3px solid #ffa834;
+  border-radius: 10px;
+  text-transform: uppercase;
+  color: #312d82;
+  font-weight: bolder;
+  font-size: 20px;
+  margin-top: -40px;
+  margin-left: 40px;
+  background-color: white;
+  margin: 25px 0;
+  margin-bottom: 40px;
+  padding: 20px 90px;
+}
+
+#quizPageContent button:hover {
+  color: #ffa834;
+  background-color: #302d83;
+}
+
+@media only screen and (max-width: 850px) {
+  #quizPageContent button {
+    padding: 10px 12px;
+    width: 170px;
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  #quizPageContent button {
+    padding: 10px 10px;
+    width: 130px;
+    font-size: 15px;
+  }
+}
+
+#quizPageContent span {
+  font-size: 15px;
+  color: #1e1f20;
+}
+
+.footerhr {
+  margin: 0;
+  height: 7px;
+  background-color: #ffa834;
+  border: none;
+}
+/*# sourceMappingURL=style.css.map */
